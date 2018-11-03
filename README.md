@@ -6,7 +6,7 @@ The goal of this exercise is to create a product to highlight the prediction alg
 
 - A slide deck consisting of no more than 5 slides created with R Studio Presenter (https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations) pitching your algorithm and app as if you were presenting to your boss or an investor.
 
-The repository contains all the source codes for the Capstone project: ui.R, server.R, Documentation.MD and Capstone_project.RPRES. 
+The repository contains all the source codes for the Capstone project: ui.R, server.R and Capstone_project.RPRES. 
 The key deliverables are the following: 
 
 - A Shiny application has been created and deployed on Rstudio's servers, which is available by the link: https://elfedorova.shinyapps.io/Word_predictor/
