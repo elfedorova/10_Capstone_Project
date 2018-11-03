@@ -1,0 +1,44 @@
+
+Data Science Capstone Final Project Submission
+========================================================
+author: Elena Fedorova
+date: 3 November 2018
+autosize: true
+transition: rotate
+transition-speed: slow
+width: 100%
+
+
+Introduction
+========================================================
+This presentation is a part of the Data Science Capstone delivered by the John Hopkins University on Coursera. The aim of the course project is to develop a Shiny application using natural language processing.
+The documentation on this project is as follows:
+
+- The **GitHub repository** containing all the source codes for this project (ui.R, server.R and this presentation Capstone_project.Rpres): <https://github.com/elfedorova/10_Data_Science_Capstone_Project>
+- The deployed **shiny application** is available by the link: <https://elfedorova.shinyapps.io/Word_predictor/>
+- The **source data**: <https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip>
+
+The WordPredictor Application
+========================================================
+The Shiny application of our interesest represents a tool that can predict the next word, like the one used in mobile keyboards applications implemented by the Swiftkey.
+
+Here, the user enters the text in an input box, and in the other one, the application returns the most probable word to be used.
+While entering the text, the field with the predicted next word refreshes simultaneously, and then the predicted word is provided.
+
+The predicted word is obtained from the n-grams matrices, comparing it with tokenized frequency of two, three and fourgram sequences. Additionally, the panel indicates the type of a matrix that was applied in the prediction.
+
+
+Preliminary Tasks and Approach
+========================================================
+- The source data consists of four chunks (relative to the language of a data set). For the purpose of the project we use **en_US** data sets.
+
+- Having loaded the data, we can perform cleaning: conversion to lower case, removal of the punctuation,  whitespace, numbers and stopwords. The corpus was converted to plain text.
+
+- As a next step, the tokenizer was created in order to construct the prediction models.
+
+- Ultimately, the tables of n-grams (unigram, bigram, trigram and fourgrams) are used to predict the next word based on the text entered by the user.
+
+The Graphical User Interface
+========================================================
+In the suggested GUI the user inputs a phrase or a word into the textbox, and the application throws the most likely next word based on the word frequency, identifying the exact type of a matrix that was used in the particular case. 
+![Application Screenshot](Application.jpg)

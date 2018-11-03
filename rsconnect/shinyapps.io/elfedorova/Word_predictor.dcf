@@ -1,0 +1,13 @@
+name: Word_predictor
+title: Word_predictor
+username:
+account: elfedorova
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 550888
+bundleId: 1680171
+url: https://elfedorova.shinyapps.io/Word_predictor/
+when: 1541273289.14022
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: combinedRaw.RData|dBlog.RData|dNews.RData|dTwitter.RData|en_US.blogs.txt|en_US.news.txt|en_US.twitter.txt|finalCorpus.RData|ngram2.RData|ngram3.RData|ngram4.RData|Tokenizers.R|train.RData
